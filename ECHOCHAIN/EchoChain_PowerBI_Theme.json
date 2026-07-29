@@ -1,0 +1,50 @@
+{
+  "name": "EchoChain",
+  "dataColors": [
+    "#7FA65A",
+    "#D8C08A",
+    "#D65B4A",
+    "#4A6558",
+    "#C9793B",
+    "#9FB3A6",
+    "#2F5544",
+    "#EFE9DC"
+  ],
+  "background": "#10241C",
+  "foreground": "#EFE9DC",
+  "tableAccent": "#7FA65A",
+  "good": "#7FA65A",
+  "neutral": "#D8C08A",
+  "bad": "#D65B4A",
+  "maximum": "#7FA65A",
+  "center": "#D8C08A",
+  "minimum": "#D65B4A",
+  "null": "#4A6558",
+  "textClasses": {
+    "callout": { "fontSize": 32, "color": "#EFE9DC" },
+    "title": { "fontSize": 14, "color": "#EFE9DC" },
+    "header": { "fontSize": 12, "color": "#9FB3A6" },
+    "label": { "fontSize": 10, "color": "#EFE9DC" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#17332A" } }, "transparency": 0 }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#274A3D" } }, "radius": 4 }],
+        "outspacePane": [{ "backgroundColor": { "solid": { "color": "#10241C" } } }]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [{ "color": { "solid": { "color": "#D8C08A" } }, "fontSize": 28 }],
+        "categoryLabels": [{ "color": { "solid": { "color": "#9FB3A6" } }, "fontSize": 11 }]
+      }
+    },
+    "slicer": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#17332A" } } }],
+        "items": [{ "fontColor": { "solid": { "color": "#EFE9DC" } } }]
+      }
+    }
+  }
+}
