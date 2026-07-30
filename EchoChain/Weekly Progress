@@ -1,1 +1,27 @@
+Week 1: Data Setup & PowerBI Dashboard Foundation**
+- Created a mock dataset (EchoChain_20000.csv) with 20,000 rows containing product, listing, warranty, and market data
+- Loaded and inspected the data using Python (Pandas) in VS Code
+- Installed PowerBI Desktop and connected it to the CSV file
+- Built the first set of charts:
+  - Average Circularity Score by Product Model
+  - Refurbishment Cost by Brand
+  - Buyback Recommendation breakdown (pie chart)
+- Saved the file as EchoChain_Dashboard.pbix
+Week 2: Data Engineering (PySpark) & Data Modeling**
+- Verified data quality (checked for missing values and duplicates — found none)
+- Installed Java and PySpark (had some setup issues, fixed by reinstalling Java properly)
+- Ran PySpark scripts to group and analyze data (e.g., average Circularity Score by Brand)
+- Installed fuzzywuzzy library and tested basic fuzzy string matching
+- Explored PowerBI's Model view
+- Created your first DAX measure: *Avg Circularity Score*
 
+Week 3: Fuzzy Matching & Circularity Metrics**
+- Ran fuzzy matching at a larger scale (100 rows) comparing Listing_Title vs Product_Model
+- Created additional DAX measures in PowerBI:
+  - Avg Depreciation
+  - Total Refurbishment Profit
+
+Week 4: Automation & Final Executive Dashboard**
+- Added KPI *card visuals* to the dashboard (Avg Circularity Score, Avg Depreciation, Total Refurbishment Profit)
+- Rearranged and polished the dashboard layout for a professional, executive-ready look
+- Finalized and saved the complete PowerBI report
