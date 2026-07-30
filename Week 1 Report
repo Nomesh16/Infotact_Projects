@@ -1,18 +1,9 @@
-Week 1 Progress Report
-Data Acquisition & BI Foundations
-Scope
-Week 1 covers building the scraping infrastructure for the secondary electronics market and standing up the BI
-layer's foundation, including importing the internal manufacturing datasets that Week 2 onward will join against.
-Data Engineering — Scraping Infrastructure
-Built a spider targeting the secondary electronics market, with two implementations sharing one output schema:
-• Production spider (scrapy_project/spiders/secondary_market_spider.py) — a real Scrapy spider. Obeys
-robots.txt, throttles requests (DOWNLOAD_DELAY = 1.0s), identifies itself with a custom User-Agent, and
-exports to a JSON-lines feed.
-• Local runnable version (fallback_scraper.py) — identical extraction logic, used to validate the pipeline in
-an environment without Scrapy or live internet access. Same input, same output schema — a drop-in swap
-once Scrapy is available.
-Source data: a mock secondary-market site (220 listings) generated to reflect real-world messiness — mixed
-whole-laptop and spare-part listings, inconsistent title formatting, marketing noise ("L@@K", "FAST SHIP"), and
-varied condition labels.
-Result: 220 / 220 listings successfully crawled and extracted to the Bronze layer with zero parse failures.
-
+ Week 1: Data Setup & PowerBI Dashboard Foundation**
+- Created a mock dataset (EchoChain_20000.csv) with 20,000 rows containing product, listing, warranty, and market data
+- Loaded and inspected the data using Python (Pandas) in VS Code
+- Installed PowerBI Desktop and connected it to the CSV file
+- Built the first set of charts:
+  - Average Circularity Score by Product Model
+  - Refurbishment Cost by Brand
+  - Buyback Recommendation breakdown (pie chart)
+- Saved the file as EchoChain_Dashboard.pbix
