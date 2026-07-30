@@ -1,1 +1,10 @@
+Week 3: Fuzzy Matching & Circularity Metrics**
+- Ran fuzzy matching at a larger scale (100 rows) comparing Listing_Title vs Product_Model
+- Created additional DAX measures in PowerBI:
+  - Avg Depreciation
+  - Total Refurbishment Profit
 
+Week 4: Automation & Final Executive Dashboard**
+- Added KPI *card visuals* to the dashboard (Avg Circularity Score, Avg Depreciation, Total Refurbishment Profit)
+- Rearranged and polished the dashboard layout for a professional, executive-ready look
+- Finalized and saved the complete PowerBI report.
