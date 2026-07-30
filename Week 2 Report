@@ -1,16 +1,7 @@
-Week 2 Progress Report
-ELT Pipeline & Initial Data Modeling
-Scope
-Week 2 covers landing the scraped data into the Lakehouse's Bronze layer, cleaning it into a typed Silver layer,
-and establishing the relationships between the internal manufacturing tables that Week 3's fuzzy-matching step
-will build on.
-Data Engineering — Bronze fi Silver
-bronze_to_silver.py (pandas, run locally) performs the cleaning; pyspark_production/02_silver_clean.py is the
-PySpark + Delta Lake equivalent for the real cluster. Steps:
-• De-duplication on listing_id
-• Price parsing: "$1106.36" fi 1106.36 (float)
-• Condition-text fi numeric condition factor (e.g. "Used - Good" fi 0.58)
-• Seller-rating string fi float percentage
-• Listing-type classification: whole laptop vs. spare part, with component keyword extraction (Motherboard /
-Display / Battery / Keyboard / RAM / SSD)
-• Title noise-stripping to prepare for SKU fuzzy-matching in Week 3
+ Week 2: Data Engineering (PySpark) & Data Modeling**
+- Verified data quality (checked for missing values and duplicates — found none)
+- Installed Java and PySpark (had some setup issues, fixed by reinstalling Java properly)
+- Ran PySpark scripts to group and analyze data (e.g., average Circularity Score by Brand)
+- Installed fuzzywuzzy library and tested basic fuzzy string matching
+- Explored PowerBI's Model view
+- Created your first DAX measure: *Avg Circularity Score*
